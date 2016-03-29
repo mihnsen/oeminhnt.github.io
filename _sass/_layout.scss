@@ -1,0 +1,269 @@
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.blog-container {
+  width: 1170px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 970px;
+  }
+
+  @include mobile {
+    width: 640px;
+  }
+}
+
+.oe-header {
+  margin-bottom: 50px;
+  @include mobile {
+    text-align: center;
+  }
+
+  .top-nav {
+    float: right;
+    margin-right: 60px;
+
+    ul {
+      li {
+        display: inline;
+        margin-left: 20px;
+        line-height: 40px;
+
+        a {
+          font-size: .8em;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .top-social-nav {
+    float: right;
+    ul {
+      li {
+        display: inline;
+        line-height: 40px;
+        a {
+          display: block;
+          float: left;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+.top-head {
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+}
+
+.site-avatar {
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.site-info {
+  padding: 15px 0 10px;
+  background: $lightGray;
+
+  @include mobile {
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: .7em;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 1em;
+  border-bottom: 1px solid $ligterBlue;
+  margin-bottom: 1em;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+}
+
+.oe-footer {
+  padding: 40px 0 20px;
+  margin-top: 50px;
+  background-color: $primary;
+  color: $footerColor;
+  a {
+    color: $footerColor;
+  }
+  h2 {
+    color: $white;
+  }
+
+  .logo-black {
+    width: 40px;
+    height: 40px;
+    float: right;
+    img {
+      -webkit-filter: grayscale(100%);
+    }
+  }
+
+  .copyright {
+    font-size: .8em;
+    text-align: center;
+    color: $blue;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .contact-description {
+    margin-top: 5px;
+    font-size: .9em;
+  }
+
+  .contact-info {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.divider-line {
+  clear: both;
+  float: none;
+  margin: 10px 0 10px;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid $ligterBlue;
+}
+
+
+.page-entry {
+  float: left;
+  width: 75%;
+}
+.sidebar {
+  float: left;
+  margin-left: 5%;
+  width: 20%;
+}
+.oe-aside {
+  margin-bottom: 50px;
+
+  h4 {
+    display: inline-block;
+    border-bottom: 3px solid $secondary;
+  }
+}
+
+.thumbnail {
+  border: 1px solid $borderColor;
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+}
+
+.post-title {
+  font-size: 1.8em;
+}
+
+.post-entry {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.related {
+  h2 {
+    display: inline-block;
+    border-bottom: 3px solid $secondary;
+  }
+}
+.entry {
+  p {
+    margin: 5px 0;
+  }
+}
+
+
+.related-posts,
+.aside-list {
+  margin-top: 15px;
+  li {
+    display: block;
+    margin-bottom: 10px;
+
+    &:after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+  }
+
+  small {
+    display: block;
+    font-size: .8em;
+    color: $blue;
+    float: right;
+  }
+}
+.related-posts {
+  margin-top: 30px;
+}

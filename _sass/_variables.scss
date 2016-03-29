@@ -4,7 +4,14 @@
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #335057;
+$primary: #191e2a;
+$secondary: #F07B4A;
+
+$ligterBlue: #212D38;
+$footerColor: #d6e4da;
+$textColor: $blue;
+$borderColor: $blue;
 
 // Grays
 $black: #000;
@@ -14,12 +21,20 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+
+$background: #fff;
+
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
+@mixin tablet {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
