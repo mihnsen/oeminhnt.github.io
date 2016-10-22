@@ -65,8 +65,8 @@ _Instruction below is NOT *hard-rules* but recommended. It can be changed a litt
 >   * Limit to 72 characters (include commit-type)
 >     If you work with github projects, the limit should be 69
 >     _The best_: 50
->   * Use imperative, present tense
->     Use `Add abc`, `Change xyz`,...
+>   * Use imperative, present tense  
+>     Use `Add abc`, `Change xyz`,...  
 >     Do not use `Adds abc`, `Added abc`,...
 
 ##### _Body_
