@@ -62,8 +62,8 @@ _Instruction below is NOT *hard-rules* but recommended. It can be changed a litt
 > \<Commit-subject\> - Mandatory. It should follow some basic rules:
 >   * Capitalize the subject line
 >   * DO NOT end the subject line with a period/full-stop (.)
->   * Limit to 72 characters (include commit-type)
->     If you work with github projects, the limit should be 69
+>   * Limit to 72 characters (include commit-type)  
+>     If you work with github projects, the limit should be 69  
 >     _The best_: 50
 >   * Use imperative, present tense  
 >     Use `Add abc`, `Change xyz`,...  
@@ -79,9 +79,9 @@ _Instruction below is NOT *hard-rules* but recommended. It can be changed a litt
 ##### _Footer_
 
 > \<Commit-footer\> - Optinal.
->   * Referencing issues
+>   * Referencing issues  
 >     Bug/Open issues/Close issues reference
->   * Breaking change
+>   * Breaking change  
 >     Google for more information.
 
 
